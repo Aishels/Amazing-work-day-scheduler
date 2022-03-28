@@ -28,8 +28,11 @@ var interval = setInterval(function() {
     $('#currentDay').html(currentDate + " " + momentNow.format('hh:mm:ss A'));
   }, 100);
 
-
-
+function initPage () {
+    console.log("Current Hour " + hour);
+    var init9 = JSON.parse(localStorage.getItem("09:00 am"));
+    nineAm.val(init9);
+}
 
 
 //   buttons and local storage
