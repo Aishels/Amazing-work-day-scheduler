@@ -86,5 +86,8 @@ $(document).ready(function(){
     background()
 
     //   buttons and local storage
-    
+    $(".saveBtn").on("click", function(){
+        userInput = $(this).siblings(".form-control").val().trim();
+        console.log(userInput);
+    })
 })
